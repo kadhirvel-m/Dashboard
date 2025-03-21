@@ -3553,19 +3553,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #696cff;
-  --bs-btn-border-color: #696cff;
+  --bs-btn-color: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #696cff;
-  --bs-btn-hover-border-color: #696cff;
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
   --bs-btn-focus-shadow-rgb: 105, 108, 255;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #696cff;
-  --bs-btn-active-border-color: #696cff;
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #696cff;
+  --bs-btn-disabled-color: var(--primary-color);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #696cff;
+  --bs-btn-disabled-border-color: var(--primary-color);
   --bs-gradient: none;
 }
 
@@ -9001,18 +9001,18 @@ button:focus-visible {
 
 /* Outline */
 .btn-outline-primary {
-  --bs-btn-color: var(--bs-primary);
-  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-color: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
   --bs-btn-hover-color: var(--bs-primary-contrast);
-  --bs-btn-hover-bg: color-mix(in sRGB, #000 10%, var(--bs-primary));
+  --bs-btn-hover-bg: color-mix(in sRGB, #000 10%, var(--primary-color));
   --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
   --bs-btn-box-shadow-rgb: var(--bs-primary-rgb);
   --bs-btn-active-color: var(--bs-primary-contrast);
-  --bs-btn-active-bg: color-mix(in sRGB, #000 10%, var(--bs-primary));
+  --bs-btn-active-bg: color-mix(in sRGB, #000 10%, var(--primary-color));
   --bs-btn-active-border-color: var(--bs-btn-active-bg);
-  --bs-btn-disabled-color: var(--bs-primary);
-  --bs-btn-disabled-border-color: var(--bs-primary);
-  --bs-btn-group-border-color: var(--bs-primary);
+  --bs-btn-disabled-color: var(--primary-color);;
+  --bs-btn-disabled-border-color: var(--primary-color);;
+  --bs-btn-group-border-color: var(--primary-color);
 }
 
 /* Default */
@@ -13632,7 +13632,7 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--primary-color)
 }
 
 .text-secondary {
@@ -23377,6 +23377,5 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
 .border-button { 
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 

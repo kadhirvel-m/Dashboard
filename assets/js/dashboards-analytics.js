@@ -113,11 +113,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
       series: [
         {
           name: new Date().getFullYear() - 1,
-          data: [18, 7, 15, 29, 18, 12, 9]
+          data: [421, 164, 351, 679, 421, 281, 211]
         },
         {
           name: new Date().getFullYear() - 2,
-          data: [-13, -18, -9, -14, -8, -17, -15]
+          data: [-304, -421, -211, -328, -187, -398, -351]
         }
       ],
       chart: {
