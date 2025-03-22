@@ -618,8 +618,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
         type: 'donut',
         offsetX: 15
       },
-      labels: ['Electronic', 'Sports', 'Decor', 'Fashion'],
-      series: [50, 85, 25, 40],
+      labels: ['Instagram', 'Facebook', 'X', 'YouTube'],
+      series: [500, 850, 250, 400],
       colors: [config.colors.success, config.colors.primary, config.colors.secondary, config.colors.info],
       stroke: {
         width: 5,
