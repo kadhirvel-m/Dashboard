@@ -52,7 +52,20 @@
     <script src="../assets/js/config.js"></script>
   </head>
 
-  <body>
+  <body onload="hideLoader()">
+    <!-- Loader -->
+    <div class="loader-container" id="loading">
+      <h3 style="margin-bottom: 100px;">Please Wait</h3>
+        <div class="loader-6">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div>
     <!-- Content -->
 
     <div class="container-xxl">
@@ -179,5 +192,14 @@
 
     <!-- Place this tag before closing body tag for github widget button. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+      function hideLoader() {
+          setTimeout(() => {
+              document.getElementById("loading").style.display = "none";
+              document.getElementById("content").style.display = "block";
+          }, 1000);
+      }
+    </script>
   </body>
 </html>
