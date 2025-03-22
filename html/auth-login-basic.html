@@ -108,7 +108,7 @@
                   </div>
                 </div>
                 <div class="mb-6">
-                  <button class="btn button-color d-grid w-100" type="submit">Login</button>
+                    <button type="button" class="btn button-color d-grid w-100" onclick="validateLogin()">Login</button>
                 </div>
               </form>
 
@@ -125,7 +125,36 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalToggle" aria-hidden="true" aria-labelledby="modalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalToggleLabel">Login Failed</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Incorrect email or password. Please try again.</div>
+            <div class="modal-footer">
+            <button class="btn button-color" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <!-- / Content -->
+
+    <script>
+        function validateLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email === "saadana@gmail.com" && password === "test") {
+            window.location.href = "index.html";
+            } else {
+            var modal = new bootstrap.Modal(document.getElementById('modalToggle'));
+            modal.show();
+            }
+        }
+    </script>
 
     <!-- Core JS -->
 
