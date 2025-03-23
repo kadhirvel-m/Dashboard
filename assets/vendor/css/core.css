@@ -23426,3 +23426,7 @@ body:not(.modal-open) .layout-content-navbar .layout-navbar {
 .loader-square:nth-of-type(5) { animation-delay: -1.25s; }
 .loader-square:nth-of-type(6) { animation-delay: -1.5s; }  
 /* Loader End */
+
+.margin-neg {
+  margin-top: -40px;
+}
